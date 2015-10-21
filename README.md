@@ -1,6 +1,5 @@
 ## How to Use
 
-<br />
 
 ### About
 This tiny PHP script is intended to convert your comic/manga from images into `*.cbz` archive format. 
