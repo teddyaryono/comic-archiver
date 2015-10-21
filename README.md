@@ -12,7 +12,7 @@ $ php /path/to/comic-archiver.php /path/to/your/comic-directory
 
 ### Example
 ```
-$ ls /path/to/your/comic-directory
+$ ls /home/johndoe/comics/doraemon
 Doraemon 00   3 Dimension
 Doraemon 01   All the Way from a Future World
 Doraemon 02   Prophecy of Doraemon
@@ -22,7 +22,7 @@ Doraemon 05   Kobe Abe
 
 $ php /home/johndoe/comic-archiver.php /home/johndoe/comics/doraemon
 
-$ ls
+$ ls /home/johndoe/comics/doraemon
 Doraemon 00   3 Dimension.cbz
 Doraemon 01   All the Way from a Future World.cbz
 Doraemon 02   Prophecy of Doraemon.cbz
