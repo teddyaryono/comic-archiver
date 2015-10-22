@@ -3,7 +3,7 @@
 
 ### About
 - This tiny PHP script is intended to convert your comic/manga from images into `*.cbz` archive format.
-- Note: This script supports Linux/Mac OS only. Windows will be supported soon.  
+- **Note**: This script supports Linux/Mac OS only. Windows will be supported soon.  
 
 ### General usage
 ```
