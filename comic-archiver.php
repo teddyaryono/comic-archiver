@@ -49,6 +49,6 @@ if($os == 'Linux') {
 	
 } else {
 	
-	echo "Your OS does not support this tool. Please, use Linux or Mac OS.\n";
+	echo "Your OS does not support this tool.\n";
 	
 }
