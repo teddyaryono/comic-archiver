@@ -2,7 +2,17 @@
 
 // $pwd = '/home/teddyaryono/Documents/comics/Doraemon/';
 // working directory in arguments, must be a full-path with trailing slash
+
+if(empty($argv[1])){
+	die('This tool needs a working directory as the first argument.' . PHP_EOL);
+}
+
 $pwd = $argv[1];
+$pwd = realpath($pwd); // Supports relative parts now.
+
+if(!file_exists ($pwd)){ // If directory does not exist abort.
+	die('Directory '.$argv[1].' not found.' . PHP_EOL);
+}
 
 // Get OS (Linux/Win)
 $os = PHP_OS;
@@ -32,7 +42,7 @@ if($os == 'Linux') {
 		echo shell_exec($cmd);
 	}
 	// Archiving process is done
-	echo "Archiving complete.\n";
+	echo "Archiving complete." . PHP_EOL;
 	
 	
 	// Renaming to *.cbz
@@ -45,10 +55,8 @@ if($os == 'Linux') {
 		echo shell_exec($cmd);
 	}
 	// Renaming process is done
-	echo "Renaming complete.\n";
+	echo "Renaming complete." . PHP_EOL;
 	
 } else {
-	
-	echo "Your OS does not support this tool.\n";
-	
+	echo "Your OS does not support this tool." . PHP_EOL;
 }
